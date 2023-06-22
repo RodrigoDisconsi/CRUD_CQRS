@@ -1,0 +1,21 @@
+.btn{
+    border-radius: 5px;   
+}
+
+label {
+    display: block;
+    margin: 0 0 10px;
+    color: #4285F4;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+
+  }
+
+select{
+    width: 9vh;
+    height: 5vh;
+    margin-left: 1vh;
+}

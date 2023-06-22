@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: CRUDCleanArchitecture.Api/src/Api/Dockerfile
+  sql:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    container_name: sqlserverdb
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=A&VeryComplex123Password

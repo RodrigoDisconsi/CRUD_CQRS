@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[Personas] (
+	[Id] INT NOT NULL CONSTRAINT PK_Personas_Id PRIMARY KEY IDENTITY (1, 1),
+	[DNI] INT NOT NULL,
+	[Nombre] VARCHAR (50) NOT NULL,
+    [Apellido] VARCHAR (50) NOT NULL,
+)
